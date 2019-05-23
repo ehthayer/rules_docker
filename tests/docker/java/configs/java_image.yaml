@@ -10,6 +10,7 @@ metadataTest:
         '/app/io_bazel_rules_docker/tests/docker/java/libjava_image_library.jar:/app/io_bazel_rules_docker/../com_google_guava_guava/guava-18.0.jar:/app/io_bazel_rules_docker/tests/docker/java/java_image.binary.jar:/app/io_bazel_rules_docker/tests/docker/java/java_image.binary:/app/io_bazel_rules_docker/tests/docker/java/BUILD',
         '-XX:MaxPermSize=128M',
         '-Dbuild.location=tests/docker/java/BUILD',
+        '-Dsystem.property.with.var=$$FOO'
         'examples.images.Binary',
         'arg0',
         'arg1',
